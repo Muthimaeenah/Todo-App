@@ -1,0 +1,93 @@
+body{
+ background: radial-gradient( #e8e8ece8 , #5349e7e8);
+  color: rgb(37, 6, 243);
+}
+.Todolist_wrapper{
+    width: fit-content;
+    padding: 1rem;
+    margin: 5rem auto;
+    box-shadow: 0px 5px 7px rgb(7, 0, 0);
+}
+.todo_name{
+    text-align: center;
+}
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    padding-bottom: .8rem;
+    border-bottom: 1px solid rgb(23, 3, 248);
+}
+input{
+    width: 300px; 
+    padding: .5rem;
+    margin-right: .8rem;
+    border: none;
+    border-radius: 5px;
+}
+input:focus {
+    outline: 3px solid rgb(174, 248, 131);
+}
+.taskbox{
+    margin-left: -2.5rem ;
+}
+.tasklist{
+    padding: 1rem .5rem;
+    margin: 1.5rem 1rem;
+    box-shadow: 0px 5px 7px rgb(7, 0, 0);
+}
+.tasklist button{
+    border: none;
+    background-color: transparent;
+    float: right;
+    cursor: pointer;
+}
+.tasklist button:hover{
+    margin-top: -.5rem;
+    font-size: 1.5rem;
+    transition: .4s;
+}
+
+@media (max-width:768px){
+    .Todolist_wrapper{
+      width: 70%;
+      margin: 4rem auto;
+    }
+}
+@media (max-width:480px){
+    .Todolist_wrapper{
+      width: 80%;
+    }
+    input{
+      width: 70%; 
+    }
+    .addbtn{
+      padding: .5rem;
+    }
+    .tasklist{
+      padding: .5rem ;
+      margin: 1rem .6rem;
+  
+    }
+    .tasklist button{
+      font-size: .8rem;
+      margin-right: .2rem;
+    }
+    .tasklist button:hover{
+      margin-top: -.2rem;
+      font-size: 1rem;
+    }
+}
+@media (max-width:400px) {
+    .Todolist_wrapper{
+      width: 80%;
+    }
+    input{
+      width: 70%; 
+    }
+    .addbtn{
+      padding: .2rem 0;
+    
+    }
+}
